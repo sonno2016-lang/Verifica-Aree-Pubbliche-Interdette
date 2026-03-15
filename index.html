@@ -27,7 +27,7 @@
         li { padding: 12px; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center; }
         .street-info { flex-grow: 1; margin-right: 10px; }
         .street-name { font-weight: 600; color: #222; font-size: 0.95rem; display: block; }
-        .note { font-size: 0.75rem; color: #777; font-weight: 400; }
+        .note { font-size: 0.75rem; color: #777; font-weight: 400; line-height: 1.2; display: block; margin-top: 2px; }
         
         .tag { font-size: 0.65rem; padding: 4px 8px; border-radius: 5px; font-weight: bold; text-transform: uppercase; white-space: nowrap; }
         .tag-forbidden { background: #ffebee; color: #c62828; border: 1px solid #ffcdd2; }
@@ -51,12 +51,41 @@
     </div>
     
     <div class="info-bar">
-        <span><span id="counter">129</span> vie/piazze caricate</span>
+        <span><span id="counter">130</span> vie/piazze caricate</span>
         <span style="font-weight: bold;">COMUNE DI PALERMO</span>
     </div>
 
     <ul id="mainList">
         <li data-v="PIAZZA VIGLIENA QUATTRO CANTI"><div class="street-info"><span class="street-name">PIAZZA VIGLIENA (QUATTRO CANTI)</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA AMARI MICHELE"><div class="street-info"><span class="street-name">VIA MICHELE AMARI</span><span class="note">Tratto da via Emerico Amari a via P.pe di Belmonte</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA MARIANO STABILE"><div class="street-info"><span class="street-name">VIA MARIANO STABILE</span><span class="note">Tratti: P.zza Napoli-Wagner / Meccio-Roma</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA BATTISTI CESARE"><div class="street-info"><span class="street-name">VIA CESARE BATTISTI</span><span class="note">Tratto tra via Maqueda e vicolo delle Pergole</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA BONELLO MATTEO"><div class="street-info"><span class="street-name">VIA MATTEO BONELLO</span><span class="note">Tratto da via Incoronazione a via Vittorio Emanuele</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA BONOMO GABRIELE"><div class="street-info"><span class="street-name">VIA GABRIELE BONOMO</span><span class="note">Tratto da via Emerico Amari a via Benedetto Gravina</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA CAMPANIA"><div class="street-info"><span class="street-name">VIA CAMPANIA</span><span class="note">Tratto da via Lazio a via Emilia</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA LEOPARDI GIACOMO"><div class="street-info"><span class="street-name">VIA GIACOMO LEOPARDI</span><span class="note">Tratto da via Notarbartolo a via P.pe di Paternò</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIALE PIEMONTE"><div class="street-info"><span class="street-name">VIALE PIEMONTE</span><span class="note">Tratto da via P.pe di Paternò a viale Lazio</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA TRINACRIA"><div class="street-info"><span class="street-name">VIA TRINACRIA</span><span class="note">Tratto da via Emilia a piazza Giovanni Paolo II</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA PAPIRETO"><div class="street-info"><span class="street-name">VIA PAPIRETO</span><span class="note">Tratto tra via G.B. Pagano e via Nicolò Turrisi</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA P PE DI BELMONTE"><div class="street-info"><span class="street-name">VIA P.PE DI BELMONTE</span><span class="note">Tratto tra via Roma e via R. Settimo</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA P PE DI GRANATELLI"><div class="street-info"><span class="street-name">VIA P.PE DI GRANATELLI</span><span class="note">Tratto da via Ruggero Settimo a via Riccardo Wagner</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA P PE DI SCORDIA"><div class="street-info"><span class="street-name">VIA P.PE DI SCORDIA</span><span class="note">Tratto da via Benedetto Gravina a via P.pe di Belmonte</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA ISIDORO LA LUMIA"><div class="street-info"><span class="street-name">VIA ISIDORO LA LUMIA</span><span class="note">Tratto tra via Emerico Amari e via Filippo Turati</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA GIUSEPPE LA MASSA"><div class="street-info"><span class="street-name">VIA GIUSEPPE LA MASSA</span><span class="note">Tratto tra via Benedetto Gravina e via P.pe di Belmonte</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA SPINUZZA SALVATORE"><div class="street-info"><span class="street-name">VIA S. SPINUZZA</span><span class="note">Tratto tra via Roma e piazza Giuseppe Verdi</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+
+        <li data-v="VIA NAPOLI"><div class="street-info"><span class="street-name">VIA NAPOLI</span><span class="note">Aperta (Rettifica O.S. 197/2024)</span></div> <span class="tag tag-allowed">LIBERA</span></li>
+        <li data-v="VIA BARI"><div class="street-info"><span class="street-name">VIA BARI</span><span class="note">Aperta (Rettifica O.S. 197/2024)</span></div> <span class="tag tag-allowed">LIBERA</span></li>
+        <li data-v="VIA AMICO UGO ANTONIO"><div class="street-info"><span class="street-name">VIA AMICO UGO ANTONIO</span><span class="note">Aperta (Rettifica O.S. 197/2024)</span></div> <span class="tag tag-allowed">LIBERA</span></li>
+
+        <li data-v="VIA ROMA"><div class="street-info"><span class="street-name">VIA ROMA</span><span class="note">Fino a Piazza Sturzo</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA MAQUEDA"><div class="street-info"><span class="street-name">VIA MAQUEDA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA RUGGERO SETTIMO"><div class="street-info"><span class="street-name">VIA RUGGERO SETTIMO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="PIAZZA RUGGERO SETTIMO"><div class="street-info"><span class="street-name">PIAZZA RUGGERO SETTIMO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA DELLA LIBERTA"><div class="street-info"><span class="street-name">VIA DELLA LIBERTÀ</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="CORSO VITTORIO EMANUELE"><div class="street-info"><span class="street-name">CORSO VITTORIO EMANUELE</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA EMERICO AMARI"><div class="street-info"><span class="street-name">VIA EMERICO AMARI</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA CAVOUR"><div class="street-info"><span class="street-name">VIA CAVOUR</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA AGRIGENTO"><div class="street-info"><span class="street-name">VIA AGRIGENTO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA ARCHIMEDE"><div class="street-info"><span class="street-name">VIA ARCHIMEDE</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA CALTANISSETTA"><div class="street-info"><span class="street-name">VIA CALTANISSETTA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
@@ -72,23 +101,8 @@
         <li data-v="VIA TORREARSA"><div class="street-info"><span class="street-name">VIA TORREARSA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA TRAPANI"><div class="street-info"><span class="street-name">VIA TRAPANI</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA XII GENNAIO"><div class="street-info"><span class="street-name">VIA XII GENNAIO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-
-        <li data-v="VIA NAPOLI"><div class="street-info"><span class="street-name">VIA NAPOLI</span><span class="note">Aperta (Rettifica O.S. 197/2024)</span></div> <span class="tag tag-allowed">LIBERA</span></li>
-        <li data-v="VIA BARI"><div class="street-info"><span class="street-name">VIA BARI</span><span class="note">Aperta (Rettifica O.S. 197/2024)</span></div> <span class="tag tag-allowed">LIBERA</span></li>
-        <li data-v="VIA AMICO UGO ANTONIO"><div class="street-info"><span class="street-name">VIA AMICO UGO ANTONIO</span><span class="note">Aperta (Rettifica O.S. 197/2024)</span></div> <span class="tag tag-allowed">LIBERA</span></li>
-
-        <li data-v="VIA ROMA"><div class="street-info"><span class="street-name">VIA ROMA</span><span class="note">Fino a Piazza Sturzo</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA MAQUEDA"><div class="street-info"><span class="street-name">VIA MAQUEDA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA RUGGERO SETTIMO"><div class="street-info"><span class="street-name">VIA RUGGERO SETTIMO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="PIAZZA RUGGERO SETTIMO"><div class="street-info"><span class="street-name">PIAZZA RUGGERO SETTIMO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA DELLA LIBERTA"><div class="street-info"><span class="street-name">VIA DELLA LIBERTÀ</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="CORSO VITTORIO EMANUELE"><div class="street-info"><span class="street-name">CORSO VITTORIO EMANUELE</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA EMERICO AMARI"><div class="street-info"><span class="street-name">VIA EMERICO AMARI</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA CAVOUR"><div class="street-info"><span class="street-name">VIA CAVOUR</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA MARIANO STABILE"><div class="street-info"><span class="street-name">VIA MARIANO STABILE</span><span class="note">Tratto Meccio/Roma</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA GENERALE MAGLIOCCO"><div class="street-info"><span class="street-name">VIA GENERALE MAGLIOCCO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA PIGNATELLI ARAGONA"><div class="street-info"><span class="street-name">VIA PIGNATELLI ARAGONA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA SALVATORE SPINUZZA"><div class="street-info"><span class="street-name">VIA SALVATORE SPINUZZA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA PIGNATELLI ARAGONA"><div class="street-info"><span class="street-name">VIA PIGNATELLI ARAGONA</span><span class="note">Tratto tra piazza Verdi e via Salvatore Meccio</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA BARA ALL OLIVELLA"><div class="street-info"><span class="street-name">VIA BARA ALL'OLIVELLA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA OROLOGIO"><div class="street-info"><span class="street-name">VIA OROLOGIO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA GIACALONE"><div class="street-info"><span class="street-name">VIA GIACALONE</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
@@ -106,7 +120,7 @@
         <li data-v="VICOLO VIOLA"><div class="street-info"><span class="street-name">VICOLO VIOLA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA DEL GIARDINACCIO"><div class="street-info"><span class="street-name">VIA DEL GIARDINACCIO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VICOLO SANT ORSOLA"><div class="street-info"><span class="street-name">VICOLO SANT'ORSOLA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA DEL BOSCO"><div class="street-info"><span class="street-name">VIA DEL BOSCO</span><span class="note">Tratto Maqueda/V.lo del Bosco</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA DEL BOSCO"><div class="street-info"><span class="street-name">VIA DEL BOSCO</span><span class="note">Tratto Maqueda / Vicolo del Bosco</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA DIVISI"><div class="street-info"><span class="street-name">VIA DIVISI</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="PIAZZA S NICOLO DEGLI SCALZI"><div class="street-info"><span class="street-name">PIAZZA S. NICOLÒ DEGLI SCALZI</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA CASE NUOVE"><div class="street-info"><span class="street-name">VIA CASE NUOVE</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
@@ -117,7 +131,6 @@
         <li data-v="VIA CHIAPPARA AL CARMINE"><div class="street-info"><span class="street-name">VIA CHIAPPARA AL CARMINE</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA TORINO"><div class="street-info"><span class="street-name">VIA TORINO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA TRIESTE"><div class="street-info"><span class="street-name">VIA TRIESTE</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA CESARE BATTISTI"><div class="street-info"><span class="street-name">VIA CESARE BATTISTI</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA XX SETTEMBRE"><div class="street-info"><span class="street-name">VIA XX SETTEMBRE</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA LA FARINA"><div class="street-info"><span class="street-name">VIA LA FARINA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="PIAZZA ANTONIO MORDINI"><div class="street-info"><span class="street-name">PIAZZA ANTONIO MORDINI</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
@@ -127,39 +140,28 @@
         <li data-v="VIA FILIPPO TURATI"><div class="street-info"><span class="street-name">VIA FILIPPO TURATI</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="PIAZZA CASTELNUOVO"><div class="street-info"><span class="street-name">PIAZZA CASTELNUOVO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA MICHELE MIRAGLIA"><div class="street-info"><span class="street-name">VIA MICHELE MIRAGLIA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA GIACOMO LEOPARDI"><div class="street-info"><span class="street-name">VIA GIACOMO LEOPARDI</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIALE PIEMONTE"><div class="street-info"><span class="street-name">VIALE PIEMONTE</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA CAMPANIA"><div class="street-info"><span class="street-name">VIA CAMPANIA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA TRINACRIA"><div class="street-info"><span class="street-name">VIA TRINACRIA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA GABRIELE BONOMO"><div class="street-info"><span class="street-name">VIA GABRIELE BONOMO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA GIUSEPPE LA MASSA"><div class="street-info"><span class="street-name">VIA GIUSEPPE LA MASSA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA PRINCIPE DI SCORDIA"><div class="street-info"><span class="street-name">VIA PRINCIPE DI SCORDIA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA MICHELE AMARI"><div class="street-info"><span class="street-name">VIA MICHELE AMARI</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA SPEZIO"><div class="street-info"><span class="street-name">VIA SPEZIO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA ISIDORO LA LUMIA"><div class="street-info"><span class="street-name">VIA ISIDORO LA LUMIA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA MAGIONE"><div class="street-info"><span class="street-name">VIA MAGIONE</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA BOTTA"><div class="street-info"><span class="street-name">VIA BOTTA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA TEATRO GARIBALDI"><div class="street-info"><span class="street-name">VIA TEATRO GARIBALDI</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA CASTROFILIPPO"><div class="street-info"><span class="street-name">VIA CASTROFILIPPO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA RAO"><div class="street-info"><span class="street-name">VIA C. RAO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA RAO C"><div class="street-info"><span class="street-name">VIA C. RAO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA DELLA VETRIERA"><div class="street-info"><span class="street-name">VIA DELLA VETRIERA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA RISO"><div class="street-info"><span class="street-name">VIA F. RISO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA RISO F"><div class="street-info"><span class="street-name">VIA F. RISO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA DELLO SPASIMO"><div class="street-info"><span class="street-name">VIA DELLO SPASIMO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="PIAZZA S DOMENICO"><div class="street-info"><span class="street-name">PIAZZA S. DOMENICO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="PIAZZA BOLOGNI"><div class="street-info"><span class="street-name">PIAZZA BOLOGNI</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="PIAZZA BELLINI"><div class="street-info"><span class="street-name">PIAZZA BELLINI</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="PIAZZA PRETORIA"><div class="street-info"><span class="street-name">PIAZZA PRETORIA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="PIAZZA PRETORIA"><div class="street-info"><span class="street-name">PIAZZA PRETORIA</span><span class="note">Quadrilatero compreso tra Castrofilippo, Riso, Spasimo e Vetriera</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="PIAZZA CROCE DEI VESPRI"><div class="street-info"><span class="street-name">PIAZZA CROCE DEI VESPRI</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA S ANNA"><div class="street-info"><span class="street-name">VIA S. ANNA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA INCORONAZIONE"><div class="street-info"><span class="street-name">VIA INCORONAZIONE</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="PIAZZA SETT ANGELI"><div class="street-info"><span class="street-name">PIAZZA SETT'ANGELI</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA MATTEO BONELLO"><div class="street-info"><span class="street-name">VIA MATTEO BONELLO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA SIMONE DI BOLOGNA"><div class="street-info"><span class="street-name">VIA SIMONE DI BOLOGNA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="PIAZZA DEL PARLAMENTO"><div class="street-info"><span class="street-name">PIAZZA DEL PARLAMENTO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="PIAZZA DELLA VITTORIA"><div class="street-info"><span class="street-name">PIAZZA DELLA VITTORIA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="PIAZZA S GIOVANNI DECOLLATO"><div class="street-info"><span class="street-name">PIAZZA S. GIOVANNI DECOLLATO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="PIAZZA VITTORIO EMANUELE ORLANDO"><div class="street-info"><span class="street-name">PIAZZA VITTORIO EMANUELE ORLANDO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA PAPIRETO"><div class="street-info"><span class="street-name">VIA PAPIRETO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA GIOVAN BATTISTA PAGANO"><div class="street-info"><span class="street-name">VIA G.B. PAGANO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA DEL NOVIZIATO"><div class="street-info"><span class="street-name">VIA DEL NOVIZIATO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA LUME"><div class="street-info"><span class="street-name">VIA LUME</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
@@ -171,23 +173,20 @@
         <li data-v="SALITA S CATERINA"><div class="street-info"><span class="street-name">SALITA S. CATERINA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="LARGO PASQUALINO"><div class="street-info"><span class="street-name">LARGO PASQUALINO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="PIAZZA GIUSEPPE VERDI"><div class="street-info"><span class="street-name">PIAZZA GIUSEPPE VERDI</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA SPINUZZA"><div class="street-info"><span class="street-name">VIA S. SPINUZZA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="PIAZZALE UNGHERIA"><div class="street-info"><span class="street-name">PIAZZALE UNGHERIA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA SPERLINGA"><div class="street-info"><span class="street-name">VIA SPERLINGA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA VAGLICA"><div class="street-info"><span class="street-name">VIA G. VAGLICA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA GUCCIA"><div class="street-info"><span class="street-name">VIA G.B. GUCCIA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA WAGNER"><div class="street-info"><span class="street-name">VIA R. WAGNER</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA VAGLICA GIOACCHINO"><div class="street-info"><span class="street-name">VIA G. VAGLICA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA GUCCIA GIOVAN BATTISTA"><div class="street-info"><span class="street-name">VIA G.B. GUCCIA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA WAGNER RICCARDO"><div class="street-info"><span class="street-name">VIA R. WAGNER</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA VILLAERMOSA"><div class="street-info"><span class="street-name">VIA VILLAERMOSA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA GRANATELLI"><div class="street-info"><span class="street-name">VIA P.PE DI GRANATELLI</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA CERDA"><div class="street-info"><span class="street-name">VIA CERDA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA PILO"><div class="street-info"><span class="street-name">VIA R. PILO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA COZZO"><div class="street-info"><span class="street-name">VIA N. COZZO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA LUCIFORA"><div class="street-info"><span class="street-name">VIA G. LUCIFORA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA PILO ROSOLINO"><div class="street-info"><span class="street-name">VIA R. PILO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA COZZO NARCISIO"><div class="street-info"><span class="street-name">VIA N. COZZO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="VIA LUCIFERO GIOVANNI"><div class="street-info"><span class="street-name">VIA G. LUCIFERO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIALE REGINA ELENA"><div class="street-info"><span class="street-name">VIALE REGINA ELENA</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="PIAZZA MONDELLO"><div class="street-info"><span class="street-name">PIAZZA MONDELLO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
         <li data-v="VIA TORRE MONDELLO"><div class="street-info"><span class="street-name">VIA TORRE MONDELLO</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="PIAZZA BECCADELLI"><div class="street-info"><span class="street-name">PIAZZA A. BECCADELLI</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
-        <li data-v="VIA PRINCIPE DI BELMONTE"><div class="street-info"><span class="street-name">VIA P.PE DI BELMONTE</span><span class="note">Tratto Roma/Settimo</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
+        <li data-v="PIAZZA BECCADELLI ANTONIO"><div class="street-info"><span class="street-name">PIAZZA A. BECCADELLI</span></div> <span class="tag tag-forbidden">VIETATO</span></li>
     </ul>
 
     <footer>
